@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preeti | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Preeti</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero container">
+            <h1>Hi, I'm Preeti</h1>
+            <p class="subtitle">A Software Development Engineer at Amazon</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about container">
+            <h2>About Me</h2>
+            <p>
+                I am a Gold Medalist graduate from NIT Jalandhar (Batch of 2024) with a major in Electronics & Communication and a minor in Computer Science. My passion lies in building scalable and efficient software solutions. Currently, as a Software Development Engineer at Amazon, I work with AWS cloud infrastructure and backend services. I thrive on solving complex problems, as demonstrated by my experience in optimizing data processing systems and my dedication to competitive programming.
+            </p>
+            <h3>My Skills</h3>
+            <div class="skills">
+                <span>Java</span>
+                <span>TypeScript</span>
+                <span>C/C++</span>
+                <span>Data Structures</span>
+                <span>Algorithms</span>
+                <span>AWS Services</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>MongoDB</span>
+                <span>System Design</span>
+                <span>DBMS & OS</span>
+            </div>
+        </section>
+        
+        <!-- Experience Section -->
+        <section id="experience" class="projects container"> <!-- Re-using project styles for a consistent look -->
+            <h2>Experience</h2>
+            <div class="project-grid">
+                <!-- Amazon SDE -->
+                <div class="project-card">
+                    <h3>Software Development Engineer</h3>
+                    <p><strong>Amazon | Aug 2024 - Present</strong></p>
+                    <p>Working on AWS infrastructure setup (VPC, endpoints, DNS) using TypeScript, automating cloud processes, and developing a new payment method for an EU launch.</p>
+                </div>
+                <!-- Amazon Intern -->
+                <div class="project-card">
+                    <h3>Software Developer Intern</h3>
+                    <p><strong>Amazon | May 2023 - July 2023</strong></p>
+                    <p>Redesigned a data partitioning strategy for a high-volume data stream. This optimization reduced processing delays and significantly improved overall system performance.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects container">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+
+                <!-- Project 1: NAV-IC -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250/007bff/ffffff?text=NAV-IC+Project" alt="NAV-IC Project">
+                    <h3>NAV-IC: ISRO Funded Project</h3>
+                    <p>A real-time asset tracking application utilizing a hardware location device from ISRO. Integrated Bhuvan Maps to plot coordinates and deployed a control server to handle up to 200 devices.</p>
+                    <div class="project-links">
+                        <!-- TODO: Add the live demo link for NAV-IC -->
+                        <a href="#" target="_blank">Live Demo</a>
+                        <!-- TODO: Add the GitHub link for NAV-IC -->
+                        <a href="#" target="_blank">Source Code</a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Job Tracker -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250/28a745/ffffff?text=Job+Tracker+App" alt="Job Tracker App">
+                    <h3>Job Application Tracker</h3>
+                    <p>A full-stack application to streamline and monitor job applications. Features user-friendly data visualization with integrated bar charts and tables to easily track statuses.</p>
+                    <div class="project-links">
+                        <!-- TODO: Add the live demo link for Job Tracker -->
+                        <a href="#" target="_blank">Live Demo</a>
+                        <!-- TODO: Add the GitHub link for Job Tracker -->
+                        <a href="#" target="_blank">Source Code</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="about container">
+            <h2>Achievements</h2>
+            <div class="skills" style="flex-direction: column; align-items: center; gap: 20px;">
+                <p>🏅 <strong>Gold Medalist</strong> at NIT Jalandhar, Batch of 2024.</p>
+                <p>🏆 Global Rank of <strong>489</strong> in CodeChef Starters 29.</p>
+                <p>🏆 Global Rank of <strong>856</strong> in CodeChef Starters 41.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact container">
+            <h2>Get In Touch</h2>
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities. Feel free to reach out!</p>
+            <a href="mailto:singhpreety1008@gmail.com" class="cta-button">Email Me</a>
+            <div class="social-links">
+                <!-- TODO: Add your LinkedIn profile URL -->
+                <a href="#" target="_blank">LinkedIn</a>
+                <!-- TODO: Add your GitHub profile URL -->
+                <a href="#" target="_blank">GitHub</a>
+                <!-- TODO: Add your LeetCode profile URL -->
+                <a href="#" target="_blank">LeetCode</a>
+                <!-- TODO: Add your CodeChef profile URL -->
+                <a href="#" target="_blank">CodeChef</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Preeti. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
