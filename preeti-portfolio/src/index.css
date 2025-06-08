@@ -1,0 +1,234 @@
+/* --- NEW: Modern Dark Theme Color Palette --- */
+:root {
+    --primary-color: #00f2ea; /* Vibrant Teal/Cyan */
+    --primary-glow: rgba(0, 242, 234, 0.4);
+    --secondary-color: #94a3b8; /* Cool Gray */
+    --background-color: #0f172a; /* Slate Dark Blue */
+    --surface-color: #1e293b; /* Lighter Slate for Cards */
+    --text-color: #e2e8f0; /* Light Gray for Text */
+    --container-width: 1100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- NEW: Custom Scrollbar --- */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+body::-webkit-scrollbar-track {
+    background: var(--background-color);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    border: 2px solid var(--background-color);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+h1 { font-size: 3.5rem; text-shadow: 0 0 15px var(--primary-glow); }
+h2 { font-size: 2.8rem; text-align: center; }
+h3 { font-size: 1.5rem; color: var(--primary-color); }
+
+section {
+    padding: 80px 0;
+    border-bottom: 1px solid var(--surface-color);
+}
+
+/* --- Header & Navigation --- */
+header {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin-left: 30px; }
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.nav-links a:hover {
+    color: var(--primary-color);
+    text-shadow: 0 0 10px var(--primary-glow);
+}
+
+.hamburger { display: none; background: none; border: none; cursor: pointer; }
+.hamburger span {
+    display: block; width: 25px; height: 3px;
+    margin: 5px; background: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+/* --- Hero Section --- */
+.hero {
+    display: flex; flex-direction: column; justify-content: center;
+    align-items: center; text-align: center;
+    height: calc(100vh - 80px); min-height: 500px;
+}
+.hero .subtitle {
+    font-size: 1.2rem; color: var(--secondary-color);
+    margin-bottom: 30px;
+}
+.cta-button {
+    display: inline-block;
+    background-image: linear-gradient(45deg, var(--primary-color), #00a3a3);
+    color: #0f172a;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 242, 234, 0.2);
+}
+
+/* --- About & Skills Section --- */
+.about p { max-width: 800px; margin: 0 auto 40px auto; text-align: center; color: var(--secondary-color); }
+.skills { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+.skills span {
+    background: var(--surface-color);
+    padding: 8px 16px; border-radius: 20px;
+    font-size: 0.9rem; font-weight: 500;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+.skills span:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* --- Glassmorphism Project Cards --- */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+.project-card {
+    background: rgba(30, 41, 59, 0.6); /* Semi-transparent surface */
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--surface-color);
+}
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    border-color: var(--primary-color);
+}
+.project-card img { width: 100%; height: 200px; object-fit: cover; opacity: 0.8; transition: opacity 0.3s ease; }
+.project-card:hover img { opacity: 1; }
+.project-card h3, .project-card p { padding: 0 25px; }
+.project-card h3 { margin-top: 20px; }
+.project-card p { color: var(--secondary-color); }
+.project-links { padding: 25px; }
+.project-links a {
+    text-decoration: none; font-weight: 600;
+    color: var(--primary-color); margin-right: 20px;
+    transition: text-shadow 0.3s ease;
+}
+.project-links a:hover { text-shadow: 0 0 10px var(--primary-glow); }
+
+/* --- Contact Section --- */
+.contact { text-align: center; }
+.contact p { margin-bottom: 30px; color: var(--secondary-color); }
+.social-links { margin-top: 30px; }
+.social-links a {
+    margin: 0 15px; color: var(--secondary-color);
+    font-weight: 600; text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.social-links a:hover {
+    color: var(--primary-color);
+    text-shadow: 0 0 10px var(--primary-glow);
+}
+
+/* --- Footer --- */
+footer {
+    background: var(--background-color);
+    padding: 30px 0; text-align: center;
+    color: var(--secondary-color); font-size: 0.9rem;
+    border-top: 1px solid var(--surface-color);
+}
+footer p {
+    margin: 0;
+}
+
+/* --- Scroll Animation Classes --- */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    h1 { font-size: 2.8rem; }
+    h2 { font-size: 2.2rem; }
+    .nav-links {
+        display: none; flex-direction: column; position: absolute;
+        top: 80px; left: 0; width: 100%;
+        background: var(--surface-color);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    .nav-links.active { display: flex; }
+    .nav-links li { margin: 0; text-align: center; }
+    .nav-links a {
+        padding: 15px; display: block;
+        border-bottom: 1px solid var(--background-color);
+    }
+    .hamburger { display: block; }
+}
