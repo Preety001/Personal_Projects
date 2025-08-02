@@ -10,8 +10,8 @@ const Projects = () => {
                     <h3>NAV-IC: ISRO Funded Project</h3>
                     <p>A real-time asset tracking application utilizing a hardware location device from ISRO. Integrated Bhuvan Maps to plot coordinates and deployed a control server to handle up to 200 devices.</p>
                     <div className="project-links">
-                        <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+                        <a href="https://www.veed.io/view/69b73af4-63dd-46f5-b789-eb3dabbe7a4c?panel=share" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                        <a href="https://github.com/Preety001/NavIC" target="_blank" rel="noopener noreferrer">Source Code</a>
                     </div>
                 </div>
                 <div className="project-card">
